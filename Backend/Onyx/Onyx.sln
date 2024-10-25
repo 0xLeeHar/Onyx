@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Api", "Onyx.Api\Onyx.Api.csproj", "{1485DA0D-AE68-4C84-B8EE-9B63CD85E428}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{256F0452-B52E-468E-B531-266CDDCBF539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Services.Products", "Onyx.Services.Products\Onyx.Services.Products.csproj", "{BC25DC59-B492-4567-AD8F-5E801D0A2092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Common", "Onyx.Common\Onyx.Common.csproj", "{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1485DA0D-AE68-4C84-B8EE-9B63CD85E428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1485DA0D-AE68-4C84-B8EE-9B63CD85E428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1485DA0D-AE68-4C84-B8EE-9B63CD85E428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1485DA0D-AE68-4C84-B8EE-9B63CD85E428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC25DC59-B492-4567-AD8F-5E801D0A2092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC25DC59-B492-4567-AD8F-5E801D0A2092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC25DC59-B492-4567-AD8F-5E801D0A2092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC25DC59-B492-4567-AD8F-5E801D0A2092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC25DC59-B492-4567-AD8F-5E801D0A2092} = {256F0452-B52E-468E-B531-266CDDCBF539}
+	EndGlobalSection
+EndGlobal
