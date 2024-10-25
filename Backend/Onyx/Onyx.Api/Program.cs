@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Services
-builder.Services.AddProductsService(builder.Configuration);
+builder.Services.AddProductsService();
 
 // Options
 var authOptions = new AuthOptions();

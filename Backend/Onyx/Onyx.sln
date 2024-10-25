@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Services.Products", "O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Common", "Onyx.Common\Onyx.Common.csproj", "{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4731FAA9-08FB-4AA2-B869-F86DA90BC49A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Services.Products.Tests", "Onyx.Services.Products.Tests\Onyx.Services.Products.Tests.csproj", "{D1EC8BA5-D999-4BB7-9BE5-0B5EE07943D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,8 +30,13 @@ Global
 		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1440DDE3-ADFF-41E1-A22A-D8C03D341B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1EC8BA5-D999-4BB7-9BE5-0B5EE07943D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EC8BA5-D999-4BB7-9BE5-0B5EE07943D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EC8BA5-D999-4BB7-9BE5-0B5EE07943D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EC8BA5-D999-4BB7-9BE5-0B5EE07943D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BC25DC59-B492-4567-AD8F-5E801D0A2092} = {256F0452-B52E-468E-B531-266CDDCBF539}
+		{D1EC8BA5-D999-4BB7-9BE5-0B5EE07943D7} = {4731FAA9-08FB-4AA2-B869-F86DA90BC49A}
 	EndGlobalSection
 EndGlobal

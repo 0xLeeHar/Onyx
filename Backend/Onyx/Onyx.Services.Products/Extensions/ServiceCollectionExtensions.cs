@@ -1,6 +1,5 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Onyx.Services.Products.Domain.Requests;
 using Onyx.Services.Products.Messaging.Handlers;
@@ -15,8 +14,7 @@ public static class ServiceCollectionExtensions
     /// Adds the products "micro-service" to the host applications service collection.
     /// </summary>
     /// <param name="services">The service collection of the host.</param>
-    /// <param name="configuration">The configuration of the host.</param>
-    public static void AddProductsService(this IServiceCollection services, IConfiguration configuration)
+    public static void AddProductsService(this IServiceCollection services)
     {
         services.AddTransient<IProductsRepository, ProductsRepository>();
 
