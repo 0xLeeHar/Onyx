@@ -37,6 +37,14 @@ Two authentication schemes have been implemented. JWT Bearer tokens and API Keys
 
 > In production the API key (or keys) should be stored and loaded from a secrets store.
 
+### Health checks and ping
+
+Health checks were implemented using the inbuilt .NET health checks. They are registered in the service and checks connectivity to the DB, etc. They can be called at `GET /api/healthcheck`
+
+There is also a Ping/Pong endpoint at `GET /api/ping`. It will return "pong" regardless of the health of the service.
+
+Both Health Checks and Ping endpoints are unprotected.
+
 ### TODO
 
 > For production the in-memory message bus and database will need to be hosted, along with the some implementation of an OAuth provider.
