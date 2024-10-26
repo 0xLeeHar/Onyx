@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "124694c3-4799-42da-8b39-564a9a2ef537",
+		"name": "Onyx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6406027"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BMW M2\",\n    \"description\": \"Best coupe in the world\",\n    \"priceInMinorUnits\": 5500000,\n    \"colour\": \"Blue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5116/api/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5116",
+					"path": [
+						"api",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BMW M2\",\n    \"description\": \"Best coupe in the world\",\n    \"priceInMinorUnits\": 5500000,\n    \"colour\": \"Blue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5116/api/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5116",
+					"path": [
+						"api",
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "fakeapikey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BMW M2\",\n    \"description\": \"Best coupe in the world\",\n    \"priceInMinorUnits\": 5500000,\n    \"colour\": \"Blue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5116/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5116",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "fakeapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5116/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5116",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "colour",
+							"value": "Red",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
