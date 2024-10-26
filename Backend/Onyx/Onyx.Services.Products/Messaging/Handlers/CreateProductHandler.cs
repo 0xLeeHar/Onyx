@@ -1,4 +1,3 @@
-using Onyx.Common;
 using Onyx.Common.Errors;
 using Onyx.Services.Products.Domain.Resources;
 using Onyx.Services.Products.Messaging.Commands;

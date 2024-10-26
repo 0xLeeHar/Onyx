@@ -7,7 +7,7 @@ namespace Onyx.Services.Products.Domain.Requests;
 /// </summary>
 public record CreateProductRequest(string Name, string Description, int PriceInMinorUnits, string Colour);
 
-// NOTE: Validation is handles in the HTTP request pipeline and FluentValidation with return problem details for failures. 
+// NOTE: Validation is handles in the HTTP request pipeline and FluentValidation will return problem details for failures. 
 public class CreateProductRequestValidator : AbstractValidator<CreateProductRequest>
 {
     public CreateProductRequestValidator()

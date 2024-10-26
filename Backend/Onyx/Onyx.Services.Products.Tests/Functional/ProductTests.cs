@@ -6,7 +6,7 @@ using Onyx.Services.Products.Store;
 
 namespace Onyx.Services.Products.Tests.Functional;
 
-public class ProductTest(GenericTestFixture fixture) : IClassFixture<GenericTestFixture>
+public class ProductTests(GenericTestFixture fixture) : IClassFixture<GenericTestFixture>
 {
     [Fact]
     public async Task SendCreateProductCommand_SavesToDatabase()
@@ -19,7 +19,9 @@ public class ProductTest(GenericTestFixture fixture) : IClassFixture<GenericTest
         // Act
         await fixture.Bus.Send(command);
         
-        await Task.Delay(500); //Note: This is a dirty hack to wait for the queue to process.
+        //Note: This is a dirty hack to wait for the queue to process.
+        //A Rebus test harness should be included to count the pending json files and then complete the processing task when done. 
+        await Task.Delay(500); 
         
         // Assert
         var dbProduct = await fixture.DbContext.Products.FindAsync(productId);
@@ -51,7 +53,7 @@ public class ProductTest(GenericTestFixture fixture) : IClassFixture<GenericTest
     public static IEnumerable<object[]> FilterTestData = new List<object[]>
     {
         new object[] { "Black", 0 },
-        new object[] { "red", 2 },
+        new object[] { "red", 2 }, // check for case sensitivity
         new object[] { "Red", 2 },
         new object[] { "Green", 1 },
         new object[] { "Blue", 1 },
