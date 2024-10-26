@@ -2,7 +2,7 @@
 
 ## Products service
 
-The products service can be found in `~/Backend/Onyx/`. The general structure is a modular monolith, built in a manor so that each service is contained and could be deployed independently in future.
+The products service can be found in `~/Backend/`. The general structure is a modular monolith, built in a manor so that each service is contained and could be deployed independently in future.
 
 Its formed of several .NET 8 applications:
 1. `Onyx.Api` is a WebAPI application and hosts the other services.
@@ -63,6 +63,6 @@ There is a Postman collection in `~/Backend/` that includes the endpoint definit
 
 # Architecture diagram
 
-The architecture diagram can be found at `~/diagram`.
+The architecture diagram can be found at `~/diagram/Onyx.pdf`.
 
 It shows how this `Products` service can be incorporated with other services and the inversion between them.
